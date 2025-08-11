@@ -1,0 +1,52 @@
+# Arquivos de ambiente e configuração
+.env
+
+# Arquivos temporários do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Arquivos de cache
+.cache/
+.pytest_cache/
+
+# Arquivos de log
+*.log
+
+# Arquivos de mídia temporários
+*.webm
+*.m4a
+*.part
+*.mp3
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente virtual
+venv/
+ENV/
+.venv/
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo

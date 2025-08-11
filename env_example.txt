@@ -1,0 +1,4 @@
+# Token do seu bot do Discord
+# Obtenha em: https://discord.com/developers/applications
+# Renomeie este arquivo para .env e adicione seu token real
+DISCORD_TOKEN=seu_token_aqui
