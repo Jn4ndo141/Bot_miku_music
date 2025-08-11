@@ -27,7 +27,7 @@ Este bot de música para Discord oferece uma experiência de áudio de alta qual
 ## 🛠️ Requisitos Técnicos
 
 - Python 3.8 ou superior
-- FFmpeg (incluído no pacote)
+- FFmpeg (instruções de instalação abaixo)
 - Conexão com internet estável
 - Token de bot do Discord
 - Permissões adequadas no servidor Discord
@@ -38,6 +38,7 @@ Este bot de música para Discord oferece uma experiência de áudio de alta qual
 
 - [Python 3.8+](https://www.python.org/downloads/) instalado no seu sistema
 - [Git](https://git-scm.com/downloads) (opcional, para clonar o repositório)
+- [FFmpeg](https://ffmpeg.org/download.html) (necessário para processamento de áudio)
 - Token de bot do Discord válido
 
 ### Instalação Passo a Passo
@@ -49,14 +50,19 @@ Este bot de música para Discord oferece uma experiência de áudio de alta qual
    py -m pip install -r requirements.txt
    ```
 
-3. **Configure o token do bot**
-   - Renomeie o arquivo `env_example.txt` para `.env`
+3. **Configure o FFmpeg**
+   - Baixe o FFmpeg para Windows em: https://ffmpeg.org/download.html#build-windows
+   - Extraia os arquivos e coloque os executáveis (`ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe`) na pasta `ffmpeg-master-latest-win64-gpl/bin/`
+   - Consulte o arquivo `ffmpeg-master-latest-win64-gpl/README.md` para mais detalhes
+
+4. **Configure o token do bot**
+   - Renomeie o arquivo `.env_example` para `.env`
    - Substitua `seu_token_aqui` pelo seu token real do Discord
    ```
    DISCORD_TOKEN=seu_token_aqui
    ```
 
-4. **Execute o bot**
+5. **Execute o bot**
    ```bash
    # Opção 1: Direto pelo Python
    py bot_musica.py
@@ -133,6 +139,7 @@ self.loop = False  # Desativa o loop automático
 - **Erros de conexão**: Certifique-se de que o bot tem permissões adequadas no servidor
 - **Problemas com URLs**: Alguns vídeos podem ter restrições de reprodução; tente outro vídeo
 - **Bot não responde**: Verifique se os intents estão corretamente configurados no Portal do Desenvolvedor
+- **Erro ao fazer push para GitHub**: Os arquivos FFmpeg são muito grandes para o GitHub. Use o `.gitignore` fornecido para excluí-los do repositório
 
 ## 📦 Dependências
 
@@ -150,10 +157,17 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
 
+### Nota sobre arquivos grandes
+
+Os executáveis do FFmpeg excedem o limite de tamanho de arquivo do GitHub (100MB). Por isso:
+1. Eles estão incluídos no `.gitignore`
+2. Você precisará baixá-los separadamente seguindo as instruções acima
+3. Consulte o arquivo `ffmpeg-master-latest-win64-gpl/README.md` para mais detalhes
+
 ---
 
 <div align="center">
 
- Mano... tem a imagem da miku... quer mais o que?
+**Desenvolvido com ❤️ para a comunidade Discord**
 
 </div>

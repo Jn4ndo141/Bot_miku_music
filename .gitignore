@@ -50,3 +50,8 @@ ENV/
 .vscode/
 *.swp
 *.swo
+
+# Arquivos grandes do FFmpeg
+ffmpeg-master-latest-win64-gpl/bin/ffmpeg.exe
+ffmpeg-master-latest-win64-gpl/bin/ffplay.exe
+ffmpeg-master-latest-win64-gpl/bin/ffprobe.exe
