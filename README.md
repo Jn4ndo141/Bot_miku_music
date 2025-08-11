@@ -168,6 +168,6 @@ Os executáveis do FFmpeg excedem o limite de tamanho de arquivo do GitHub (100M
 
 <div align="center">
 
-**Desenvolvido com ❤️ para a comunidade Discord**
+Aproveite
 
 </div>
